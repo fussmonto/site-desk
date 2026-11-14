@@ -1,1 +1,14 @@
-{"last_updated": "", "last_updated_display": "Not run yet", "run_date": "", "demo": false, "stats": {}, "jobs": []}
+{
+ "last_updated": "2026-11-14T15:25:24+05:30",
+ "last_updated_display": "14 Nov 2026, 03:25 PM IST",
+ "run_date": "2026-11-14",
+ "demo": false,
+ "stats": {
+  "raw_listings": 0,
+  "kept_this_run": 0,
+  "new_today": 0,
+  "total_on_dashboard": 0,
+  "dropped": {}
+ },
+ "jobs": []
+}
