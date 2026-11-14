@@ -1,18 +1,18 @@
 {
- "last_updated": "2026-11-14T17:06:17+05:30",
- "last_updated_display": "14 Nov 2026, 05:06 PM IST",
+ "last_updated": "2026-11-14T17:24:13+05:30",
+ "last_updated_display": "14 Nov 2026, 05:24 PM IST",
  "run_date": "2026-11-14",
  "demo": false,
  "stats": {
-  "raw_listings": 198,
+  "raw_listings": 203,
   "kept_this_run": 60,
-  "new_today": 60,
+  "new_today": 0,
   "total_on_dashboard": 60,
   "dropped": {
-   "no construction context": 50,
-   "title not relevant": 34,
+   "no construction context": 52,
+   "title not relevant": 36,
    "contract/part-time/intern": 26,
-   "salary below location floor": 8,
+   "salary below location floor": 9,
    "fresher/junior/too senior/contract title": 4,
    "below min score": 5,
    "experience mismatch": 1
@@ -86,7 +86,7 @@
    "type": "Full-time",
    "level": "Senior Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965404461?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=91BF2EAC98B798AAC9127F3200B00A6FBFBE92AF",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965404461?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=91BF2EAC98B798AAC9127F3200B00A6FBFBE92AF",
    "source": "Adzuna",
    "score": 65,
    "matched_skills": [
@@ -113,7 +113,7 @@
    "type": "Full-time",
    "level": "Senior Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964974590?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=61E2193D3D117F4059D4A309502B168E017A39DB",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964974590?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=61E2193D3D117F4059D4A309502B168E017A39DB",
    "source": "Adzuna",
    "score": 65,
    "matched_skills": [
@@ -194,7 +194,7 @@
    "type": "Full-time",
    "level": "Manager",
    "posted": "2026-11-13",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964837158?se=yPF_5h_g8RGyRaTp6879Ag&utm_medium=api&utm_source=a363223c&v=B105394D7D033591774C75AAF0C52BB1FE658296",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964837158?se=SKYBaiLg8RGNl561rfNY_A&utm_medium=api&utm_source=a363223c&v=B105394D7D033591774C75AAF0C52BB1FE658296",
    "source": "Adzuna",
    "score": 61,
    "matched_skills": [
@@ -325,7 +325,7 @@
    "type": "Full-time",
    "level": "Senior Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965405368?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=16BDC377217E62C60C037C2E67C542F9C1D6E8FA",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965405368?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=16BDC377217E62C60C037C2E67C542F9C1D6E8FA",
    "source": "Adzuna",
    "score": 60,
    "matched_skills": [
@@ -403,7 +403,7 @@
    "type": "Consultancy",
    "level": "Senior Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964973644?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=C098E810FE02F9C542B4BB6F2A333924210CF540",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964973644?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=C098E810FE02F9C542B4BB6F2A333924210CF540",
    "source": "Adzuna",
    "score": 60,
    "matched_skills": [
@@ -455,7 +455,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965487022?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=DC162A133DB18A6447E7F02BA8546EFC7A81FA41",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965487022?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=DC162A133DB18A6447E7F02BA8546EFC7A81FA41",
    "source": "Adzuna",
    "score": 59,
    "matched_skills": [
@@ -533,7 +533,7 @@
    "type": "Full-time",
    "level": "Manager",
    "posted": "2026-11-12",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5963526290?se=yPF_5h_g8RGyRaTp6879Ag&utm_medium=api&utm_source=a363223c&v=F0435D07F1D086834F4060FFEBA4C29E9B6804C2",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5963526290?se=SKYBaiLg8RGNl561rfNY_A&utm_medium=api&utm_source=a363223c&v=F0435D07F1D086834F4060FFEBA4C29E9B6804C2",
    "source": "Adzuna",
    "score": 59,
    "matched_skills": [
@@ -612,7 +612,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964974744?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=95F942875D520A2F9E57F37C535EE66B5DBD6273",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964974744?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=95F942875D520A2F9E57F37C535EE66B5DBD6273",
    "source": "Adzuna",
    "score": 58,
    "matched_skills": [
@@ -690,7 +690,7 @@
    "type": "Full-time",
    "level": "Manager",
    "posted": "2026-11-12",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5962399169?se=yPF_5h_g8RGyRaTp6879Ag&utm_medium=api&utm_source=a363223c&v=1B71B0249E4E4BDF5AD7F93A9B9F9C0888203933",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5962399169?se=SKYBaiLg8RGNl561rfNY_A&utm_medium=api&utm_source=a363223c&v=1B71B0249E4E4BDF5AD7F93A9B9F9C0888203933",
    "source": "Adzuna",
    "score": 56,
    "matched_skills": [
@@ -844,7 +844,7 @@
    "type": "Full-time",
    "level": "Manager",
    "posted": "2026-11-12",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5963384224?se=yPF_5h_g8RGyRaTp6879Ag&utm_medium=api&utm_source=a363223c&v=71CA91943E4238175AE11C88312C38FEABE25356",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5963384224?se=SKYBaiLg8RGNl561rfNY_A&utm_medium=api&utm_source=a363223c&v=71CA91943E4238175AE11C88312C38FEABE25356",
    "source": "Adzuna",
    "score": 54,
    "matched_skills": [],
@@ -1046,7 +1046,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965405544?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=41715E5E1415C48C3D02C7F49BAB8BF21C151A58",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965405544?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=41715E5E1415C48C3D02C7F49BAB8BF21C151A58",
    "source": "Adzuna",
    "score": 53,
    "matched_skills": [
@@ -1072,7 +1072,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965404883?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=0F9D90A7E32E984851DB923FDDF13A27AECB7952",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965404883?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=0F9D90A7E32E984851DB923FDDF13A27AECB7952",
    "source": "Adzuna",
    "score": 53,
    "matched_skills": [
@@ -1228,7 +1228,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965140533?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=70CCED3DCF2649CFE9B4F2087BA9C91241F58399",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5965140533?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=70CCED3DCF2649CFE9B4F2087BA9C91241F58399",
    "source": "Adzuna",
    "score": 53,
    "matched_skills": [
@@ -1306,7 +1306,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964974372?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=B86657331497DFD06395458DC33C2F3B184691B7",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964974372?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=B86657331497DFD06395458DC33C2F3B184691B7",
    "source": "Adzuna",
    "score": 53,
    "matched_skills": [
@@ -1332,7 +1332,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-14",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964973642?se=Rq2-6x_g8RG_3f7Bvvli5g&utm_medium=api&utm_source=a363223c&v=A13851BF13FD62BF39510D429A0D15733E25F2BC",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5964973642?se=HgutbyLg8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=A13851BF13FD62BF39510D429A0D15733E25F2BC",
    "source": "Adzuna",
    "score": 53,
    "matched_skills": [
@@ -1458,7 +1458,7 @@
    "type": "Full-time",
    "level": "Engineer",
    "posted": "2026-11-13",
-   "url": "https://www.adzuna.co.uk/jobs/land/ad/5963858161?se=zEDF5B_g8RG3UKJUaLg__w&utm_medium=api&utm_source=a363223c&v=F667E82176D84DF1B1E8314C6672EB1F4F3B5C72",
+   "url": "https://www.adzuna.co.uk/jobs/land/ad/5963858161?se=jmEgaCLg8RGNl561rfNY_A&utm_medium=api&utm_source=a363223c&v=F667E82176D84DF1B1E8314C6672EB1F4F3B5C72",
    "source": "Adzuna",
    "score": 48,
    "matched_skills": [],
