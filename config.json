@@ -11,7 +11,7 @@
     {
       "name": "Kolkata", "group": "India", "priority": 1, "bonus": 6, "country_code": "IN", "enabled": true,
       "aliases": ["kolkata", "calcutta", "salt lake", "new town", "newtown", "rajarhat", "howrah", "joka", "sector v"],
-      "adzuna": {"country": "in", "where": "Kolkata"}, "jsearch": "Kolkata, India",
+      "adzuna": {"country": "in", "where": "Kolkata", "distance": 40}, "jsearch": "Kolkata, India",
       "salary_floor": {"currency": "INR", "annual": 700000}, "market_band": "approx. ₹7-13 LPA (Sr. level)"
     },
     {
@@ -113,9 +113,11 @@
       "enabled": true,
       "_note": "Free tier has request limits (check developer.adzuna.com). Requests per run = queries x locations that have an 'adzuna' block.",
       "queries": ["planning engineer", "planning manager", "billing engineer", "billing manager", "quantity surveyor"],
-      "max_days_old": 2,
+      "priority_extra_queries": ["planning", "billing", "quantity", "cost control", "contracts"],
+      "_extra_note": "priority_extra_queries run only for your priority-1 location (Kolkata) to catch more listings there. Irrelevant titles are filtered out later.",
+      "max_days_old": 7,
       "results_per_page": 50,
-      "max_requests_per_run": 60,
+      "max_requests_per_run": 70,
       "delay_seconds": 2.5
     },
     "jsearch": {

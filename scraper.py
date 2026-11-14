@@ -105,14 +105,21 @@ def fetch_adzuna(cfg: dict, locations: list[dict]) -> list[dict]:
         log("Adzuna: ADZUNA_APP_ID / ADZUNA_APP_KEY not set - skipping.")
         return []
 
-    targets = [(l["adzuna"]["country"], l["adzuna"].get("where", ""))
-               for l in locations if l.get("enabled", True) and l.get("adzuna")]
+    targets = []
+    for l in locations:
+        if not (l.get("enabled", True) and l.get("adzuna")):
+            continue
+        queries = list(sc["queries"])
+        if l.get("priority") == 1:
+            queries += [q for q in sc.get("priority_extra_queries", []) if q not in queries]
+        targets.append((l["adzuna"]["country"], l["adzuna"].get("where", ""), l["adzuna"].get("distance"), queries))
     out: list[dict] = []
     calls = 0
-    log(f"Adzuna: {len(targets)} places x {len(sc['queries'])} queries (cap {sc['max_requests_per_run']}).")
+    total = sum(len(t[3]) for t in targets)
+    log(f"Adzuna: {len(targets)} places, {total} queries planned (cap {sc['max_requests_per_run']}).")
     try:
-        for country, where in targets:
-            for query in sc["queries"]:
+        for country, where, distance, queries in targets:
+            for query in queries:
                 if calls >= sc["max_requests_per_run"]:
                     log("  request cap reached.")
                     return out
@@ -125,6 +132,8 @@ def fetch_adzuna(cfg: dict, locations: list[dict]) -> list[dict]:
                 }
                 if where:
                     params["where"] = where
+                if distance:
+                    params["distance"] = distance
                 data = http_get_json(f"https://api.adzuna.com/v1/api/jobs/{country}/search/1", params=params)
                 calls += 1
                 time.sleep(sc.get("delay_seconds", 2.5))

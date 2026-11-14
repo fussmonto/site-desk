@@ -58,7 +58,42 @@
 
     $("#lastUpdated").textContent = state.data.last_updated_display || "unknown";
     $("#demoBanner").hidden = !state.data.demo;
-    bind(); render();
+    bind(); render(); renderLive();
+  }
+
+  /* ---------- live-search links (LinkedIn / Naukri / Indeed / Google Jobs) ---------- */
+  const LIVE_ROLES = ["Planning Engineer", "Planning Manager", "Billing Engineer", "Billing Manager", "Quantity Surveyor"];
+  const slug = (s) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+  const placeOf = (l) => (l.adzuna && l.adzuna.where) || (l.jsearch ? l.jsearch.split(",")[0] : l.name);
+
+  function liveLinks(role, place, group) {
+    const q = encodeURIComponent(role), p = encodeURIComponent(place);
+    const links = [
+      ["LinkedIn", "https://www.linkedin.com/jobs/search/?keywords=" + q + "&location=" + p + "&f_TPR=r604800&sortBy=DD"],
+      ["Google Jobs", "https://www.google.com/search?q=" + encodeURIComponent(role + " jobs in " + place) + "&ibp=htl;jobs"],
+    ];
+    if (group === "India") {
+      links.splice(1, 0, ["Naukri", "https://www.naukri.com/" + slug(role) + "-jobs-in-" + slug(place)]);
+      links.splice(2, 0, ["Indeed", "https://in.indeed.com/jobs?q=" + q + "&l=" + p + "&fromage=7&sort=date"]);
+    }
+    return links;
+  }
+
+  function renderLive() {
+    const locs = state.cfg.locations.filter((l) => l.enabled !== false);
+    const sel = $("#liveLoc");
+    sel.replaceChildren(...locs.map((l, i) => h("option", { value: String(i) }, l.name)));
+    const draw = () => {
+      const l = locs[Number(sel.value)] || locs[0];
+      const place = placeOf(l);
+      $("#liveLinks").replaceChildren(...LIVE_ROLES.map((role) =>
+        h("div", { class: "live-row" },
+          h("span", { class: "live-role" }, role + " · " + place),
+          h("span", { class: "live-btns" }, liveLinks(role, place, l.group).map(([name, url]) =>
+            h("a", { class: "live-btn", href: url, target: "_blank", rel: "noopener noreferrer" }, name))))));
+    };
+    sel.addEventListener("change", draw);
+    draw();
   }
 
   /* ---------- filtering ---------- */

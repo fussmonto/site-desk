@@ -93,6 +93,19 @@ input[type="range"] { accent-color: var(--accent); width: 100%; }
 .chip[aria-pressed="true"] small { color: rgba(255,255,255,.85); }
 .chip[disabled] { opacity: .45; cursor: default; }
 
+/* ---------- Live search panel ---------- */
+.live { margin-top: 16px; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 4px 16px; box-shadow: var(--shadow); }
+.live summary { cursor: pointer; padding: 12px 0; font: 700 1.15rem var(--font-head); letter-spacing: .02em; }
+.live-body { display: grid; gap: 10px; padding-bottom: 14px; }
+.live-note { margin: 0; color: var(--muted); font-size: .85rem; }
+.live-loc { max-width: 260px; }
+.live-links { display: grid; gap: 8px; }
+.live-row { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; justify-content: space-between; padding: 8px 0; border-top: 1px dashed var(--line); }
+.live-role { font-weight: 600; font-size: .92rem; }
+.live-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.live-btn { text-decoration: none; font-size: .82rem; font-weight: 600; padding: 6px 12px; border-radius: 999px; background: var(--chip); color: var(--text); border: 1px solid var(--line); }
+.live-btn:hover { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+
 .count { margin: 18px 4px 10px; color: var(--muted); font-size: .9rem; }
 
 /* ---------- Cards ---------- */

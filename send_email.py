@@ -47,6 +47,35 @@ def dashboard_url() -> str:
     return "#"
 
 
+def _slug(text: str) -> str:
+    import re
+    return re.sub(r"[^a-z0-9]+", "-", text.lower()).strip("-")
+
+
+def live_search_html(cfg: dict) -> str:
+    """One-tap LinkedIn / Naukri / Indeed searches for the priority-1 location."""
+    from urllib.parse import quote
+    locs = sorted((l for l in cfg["locations"] if l.get("enabled", True)), key=lambda l: l["priority"])
+    if not locs:
+        return ""
+    loc = locs[0]
+    place = (loc.get("adzuna") or {}).get("where") or loc["name"]
+    style = f"color:{INK};text-decoration:none;font-size:12px;font-weight:700;background:#ece7da;border-radius:12px;padding:4px 10px;margin-right:4px;display:inline-block;"
+    rows = ""
+    for role in ["Planning Engineer", "Billing Engineer", "Quantity Surveyor", "Planning Manager"]:
+        q, p = quote(role), quote(place)
+        links = [
+            ("LinkedIn", f"https://www.linkedin.com/jobs/search/?keywords={q}&location={p}&f_TPR=r86400&sortBy=DD"),
+            ("Naukri", f"https://www.naukri.com/{_slug(role)}-jobs-in-{_slug(place)}"),
+            ("Indeed", f"https://in.indeed.com/jobs?q={q}&l={p}&fromage=3&sort=date"),
+        ]
+        btns = "".join(f'<a href="{esc(u)}" style="{style}">{n}</a>' for n, u in links)
+        rows += f'<tr><td style="padding:4px 0;font-size:13px;color:#44505c;width:150px;">{esc(role)}</td><td style="padding:4px 0;">{btns}</td></tr>'
+    return (f'<div style="margin-top:22px;padding-top:14px;border-top:1px solid #e6e1d4;">'
+            f'<div style="font-size:12px;letter-spacing:1px;text-transform:uppercase;color:{ACCENT};font-weight:700;margin-bottom:6px;">'
+            f'Search live in {esc(place)} (1 tap)</div><table cellpadding="0" cellspacing="0">{rows}</table></div>')
+
+
 def job_block(j: dict) -> str:
     skills = ", ".join(j.get("matched_skills", [])[:6]) or "-"
     badges = ""
@@ -111,6 +140,7 @@ def build_email(data: dict, cfg: dict) -> tuple[str, str, str]:
    <div style="color:#b8c4d2;font-size:13px;margin-top:2px;">Planning &middot; Billing &middot; QS &middot; updated {esc(data.get('last_updated_display',''))}</div>
  </td></tr>
  <tr><td style="padding:8px 24px 20px;"><table width="100%" cellpadding="0" cellspacing="0">{body_rows}</table>
+   {live_search_html(cfg)}
    <div style="text-align:center;margin-top:20px;"><a href="{esc(url)}" style="background:{INK};color:#fff;text-decoration:none;font-weight:700;padding:11px 22px;border-radius:6px;display:inline-block;">Open full dashboard</a></div>
  </td></tr>
  <tr><td style="padding:12px 24px;background:#efeadc;font-size:11px;color:#66727f;">Salaries shown only where the listing discloses them; location bands are rough guides. Verify every listing before applying.</td></tr>

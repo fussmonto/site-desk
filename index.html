@@ -73,6 +73,15 @@
       <div class="chips" id="chips" aria-label="Locations"></div>
     </section>
 
+    <details class="live" id="live" open>
+      <summary>🔎 Search live on LinkedIn, Naukri, Indeed &amp; Google Jobs</summary>
+      <div class="live-body">
+        <p class="live-note">These buttons open each site's own search in a new tab, so you see their newest listings that this dashboard cannot fetch.</p>
+        <label class="field live-loc"><span>Location</span><select id="liveLoc"></select></label>
+        <div id="liveLinks" class="live-links"></div>
+      </div>
+    </details>
+
     <p class="count" id="count" aria-live="polite"></p>
     <section class="grid" id="grid"></section>
     <p class="empty" id="empty" hidden>No jobs match these filters. Try clearing a location or lowering the minimum match.</p>
