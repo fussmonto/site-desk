@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Desk · Daily Planning, Billing &amp; QS Jobs</title>
+  <meta name="description" content="Daily construction planning, billing and quantity surveying job openings.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <p class="eyebrow">SITE DESK · PROJECT CONTROLS JOB BOARD</p>
+        <h1>Planning, Billing &amp; QS roles,<br>delivered daily.</h1>
+        <p class="sub">Fresh openings matched to a Planning / Billing / QS profile, ranked by fit and sorted by your preferred locations.</p>
+        <div class="stamp" role="status">
+          <span class="dot"></span> Last updated: <strong id="lastUpdated">loading…</strong>
+        </div>
+      </div>
+      <svg class="crane" viewBox="0 0 220 180" aria-hidden="true" focusable="false">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M60 175V35M80 175V35M60 175h20M60 155l20-20M60 135l20-20M60 115l20-20M60 95l20-20M60 75l20-20M60 55l20-20"/>
+          <path d="M20 35h180M70 35V12l-50 23M70 12l95 23"/>
+          <path d="M175 35v55" stroke-dasharray="3 4"/>
+          <rect x="165" y="90" width="20" height="14" rx="1"/>
+          <path d="M40 35v14h-14V35"/>
+        </g>
+      </svg>
+    </div>
+    <div class="stats" id="stats"></div>
+  </header>
+
+  <div id="demoBanner" class="demo" hidden>Preview mode: these are sample listings, not real jobs.</div>
+
+  <main>
+    <section class="toolbar" aria-label="Filters">
+      <div class="row">
+        <label class="search">
+          <span class="sr">Search jobs</span>
+          <input id="q" type="search" placeholder="Search title, company, skill (e.g. MS Project, BoQ, Primavera)…" autocomplete="off">
+        </label>
+        <label class="field"><span>Type</span>
+          <select id="type">
+            <option value="All">All</option>
+            <option value="Full-time">Full-time</option>
+            <option value="Consultancy">Consultancy firm</option>
+          </select>
+        </label>
+        <label class="field"><span>Sort by</span>
+          <select id="sort">
+            <option value="score">Best match</option>
+            <option value="newest">Newest</option>
+            <option value="location">Location priority</option>
+          </select>
+        </label>
+        <label class="field slider"><span>Min match <strong id="minScoreLabel">0%</strong></span>
+          <input id="minScore" type="range" min="0" max="90" step="5" value="0">
+        </label>
+        <button id="theme" class="ghost" type="button" aria-label="Toggle dark mode">◐</button>
+      </div>
+
+      <div class="row">
+        <div class="tabs" id="groups" role="tablist" aria-label="Region group"></div>
+        <label class="toggle"><input type="checkbox" id="onlyNew"> <span>New today</span></label>
+        <label class="toggle"><input type="checkbox" id="onlyReputed"> <span>Reputed companies</span></label>
+        <label class="toggle"><input type="checkbox" id="onlySalary"> <span>Salary disclosed</span></label>
+      </div>
+
+      <div class="chips" id="chips" aria-label="Locations"></div>
+    </section>
+
+    <p class="count" id="count" aria-live="polite"></p>
+    <section class="grid" id="grid"></section>
+    <p class="empty" id="empty" hidden>No jobs match these filters. Try clearing a location or lowering the minimum match.</p>
+  </main>
+
+  <footer>
+    <p>Data from Adzuna and JSearch, refreshed daily at 12:00 PM IST. Match % compares each listing with the CV skill list in <code>config.json</code>. Salary bands are rough location guides, not offers. Always verify a listing on the employer's own site before applying.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

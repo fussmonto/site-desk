@@ -1,0 +1,233 @@
+{
+  "_readme": "Edit this file to change locations, keywords, salary floors and email behaviour. Both the Python scripts and the website read it. JSON does not allow comments, so keys starting with _ are notes.",
+
+  "profile": {
+    "experience_years": 9,
+    "accept_required_experience_min_up_to": 13,
+    "accept_required_experience_max_at_least": 5
+  },
+
+  "locations": [
+    {
+      "name": "Kolkata", "group": "India", "priority": 1, "bonus": 6, "country_code": "IN", "enabled": true,
+      "aliases": ["kolkata", "calcutta", "salt lake", "new town", "newtown", "rajarhat", "howrah", "joka", "sector v"],
+      "adzuna": {"country": "in", "where": "Kolkata"}, "jsearch": "Kolkata, India",
+      "salary_floor": {"currency": "INR", "annual": 700000}, "market_band": "approx. ₹7-13 LPA (Sr. level)"
+    },
+    {
+      "name": "Bengaluru", "group": "India", "priority": 2, "bonus": 5, "country_code": "IN", "enabled": true,
+      "aliases": ["bengaluru", "bangalore", "whitefield", "electronic city"],
+      "adzuna": {"country": "in", "where": "Bangalore"}, "jsearch": "Bengaluru, India",
+      "salary_floor": {"currency": "INR", "annual": 950000}, "market_band": "approx. ₹10-18 LPA (Sr. level)"
+    },
+    {
+      "name": "Pune", "group": "India", "priority": 3, "bonus": 4, "country_code": "IN", "enabled": true,
+      "aliases": ["pune", "pimpri", "chinchwad", "hinjewadi", "hinjawadi"],
+      "adzuna": {"country": "in", "where": "Pune"}, "jsearch": "Pune, India",
+      "salary_floor": {"currency": "INR", "annual": 900000}, "market_band": "approx. ₹9-16 LPA (Sr. level)"
+    },
+    {
+      "name": "Delhi NCR", "group": "India", "priority": 4, "bonus": 4, "country_code": "IN", "enabled": true,
+      "aliases": ["delhi", "new delhi", "gurgaon", "gurugram", "noida", "greater noida", "ghaziabad", "faridabad"],
+      "adzuna": {"country": "in", "where": "Delhi"}, "jsearch": "Delhi NCR, India",
+      "salary_floor": {"currency": "INR", "annual": 900000}, "market_band": "approx. ₹9-17 LPA (Sr. level)"
+    },
+    {
+      "name": "Mumbai", "group": "India", "priority": 5, "bonus": 4, "country_code": "IN", "enabled": true,
+      "aliases": ["mumbai", "navi mumbai", "thane", "bombay", "kalyan", "panvel"],
+      "adzuna": {"country": "in", "where": "Mumbai"}, "jsearch": "Mumbai, India",
+      "salary_floor": {"currency": "INR", "annual": 1000000}, "market_band": "approx. ₹10-18 LPA (Sr. level)"
+    },
+    {
+      "name": "Chennai", "group": "India", "priority": 6, "bonus": 3, "country_code": "IN", "enabled": true,
+      "aliases": ["chennai", "madras", "sriperumbudur", "oragadam"],
+      "adzuna": {"country": "in", "where": "Chennai"}, "jsearch": "Chennai, India",
+      "salary_floor": {"currency": "INR", "annual": 850000}, "market_band": "approx. ₹8-15 LPA (Sr. level)"
+    },
+    {
+      "name": "Odisha", "group": "India", "priority": 7, "bonus": 3, "country_code": "IN", "enabled": true,
+      "aliases": ["odisha", "orissa", "bhubaneswar", "cuttack", "rourkela", "keonjhar", "jharsuguda", "angul", "paradip", "sambalpur", "puri"],
+      "adzuna": {"country": "in", "where": "Odisha"}, "jsearch": "Bhubaneswar, Odisha, India",
+      "salary_floor": {"currency": "INR", "annual": 650000}, "market_band": "approx. ₹6.5-12 LPA (Sr. level)"
+    },
+    {
+      "name": "Hyderabad", "group": "India", "priority": 8, "bonus": 3, "country_code": "IN", "enabled": true,
+      "aliases": ["hyderabad", "secunderabad", "telangana"],
+      "adzuna": {"country": "in", "where": "Hyderabad"}, "jsearch": "Hyderabad, India",
+      "salary_floor": {"currency": "INR", "annual": 900000}, "market_band": "approx. ₹9-16 LPA (Sr. level)"
+    },
+    {
+      "name": "UAE", "group": "Abroad", "priority": 10, "bonus": 3, "country_code": "AE", "enabled": true,
+      "aliases": ["uae", "united arab emirates", "dubai", "abu dhabi", "sharjah", "ajman", "ras al khaimah", "fujairah"],
+      "adzuna": null, "jsearch": "Dubai, United Arab Emirates",
+      "salary_floor": {"currency": "AED", "annual": 120000}, "market_band": "approx. AED 10-18k / month (plus allowances)"
+    },
+    {
+      "name": "Saudi Arabia", "group": "Abroad", "priority": 11, "bonus": 3, "country_code": "SA", "enabled": true,
+      "aliases": ["saudi", "saudi arabia", "ksa", "riyadh", "jeddah", "dammam", "jubail", "khobar", "neom", "yanbu"],
+      "adzuna": null, "jsearch": "Riyadh, Saudi Arabia",
+      "salary_floor": {"currency": "SAR", "annual": 108000}, "market_band": "approx. SAR 9-16k / month (plus allowances)"
+    },
+    {
+      "name": "Qatar", "group": "Abroad", "priority": 12, "bonus": 3, "country_code": "QA", "enabled": true,
+      "aliases": ["qatar", "doha", "lusail"],
+      "adzuna": null, "jsearch": "Doha, Qatar",
+      "salary_floor": {"currency": "QAR", "annual": 108000}, "market_band": "approx. QAR 9-16k / month (plus allowances)"
+    },
+    {
+      "name": "Oman", "group": "Abroad", "priority": 13, "bonus": 2, "country_code": "OM", "enabled": true,
+      "aliases": ["oman", "muscat", "sohar", "salalah", "duqm"],
+      "adzuna": null, "jsearch": "Muscat, Oman",
+      "salary_floor": {"currency": "OMR", "annual": 8400}, "market_band": "approx. OMR 700-1,300 / month"
+    },
+    {
+      "name": "Kuwait", "group": "Abroad", "priority": 14, "bonus": 2, "country_code": "KW", "enabled": true,
+      "aliases": ["kuwait"],
+      "adzuna": null, "jsearch": "Kuwait City, Kuwait",
+      "salary_floor": {"currency": "KWD", "annual": 7200}, "market_band": "approx. KWD 600-1,000 / month"
+    },
+    {
+      "name": "Singapore", "group": "Abroad", "priority": 15, "bonus": 2, "country_code": "SG", "enabled": true,
+      "aliases": ["singapore"],
+      "adzuna": {"country": "sg", "where": ""}, "jsearch": null,
+      "salary_floor": {"currency": "SGD", "annual": 54000}, "market_band": "approx. SGD 4.5-7k / month"
+    },
+    {
+      "name": "United Kingdom", "group": "Abroad", "priority": 16, "bonus": 2, "country_code": "GB", "enabled": true,
+      "aliases": ["united kingdom", "england", "scotland", "wales", "london", "manchester", "birmingham", "leeds", "glasgow"],
+      "adzuna": {"country": "gb", "where": ""}, "jsearch": null,
+      "salary_floor": {"currency": "GBP", "annual": 38000}, "market_band": "approx. £38-55k / year"
+    },
+    {
+      "name": "Australia", "group": "Abroad", "priority": 17, "bonus": 2, "country_code": "AU", "enabled": true,
+      "aliases": ["australia", "sydney", "melbourne", "brisbane", "perth", "adelaide"],
+      "adzuna": {"country": "au", "where": ""}, "jsearch": null,
+      "salary_floor": {"currency": "AUD", "annual": 95000}, "market_band": "approx. A$95-130k / year"
+    }
+  ],
+
+  "remote": {"name": "Remote", "group": "Remote", "bonus": 2},
+
+  "sources": {
+    "adzuna": {
+      "enabled": true,
+      "_note": "Free tier has request limits (check developer.adzuna.com). Requests per run = queries x locations that have an 'adzuna' block.",
+      "queries": ["planning engineer", "planning manager", "billing engineer", "billing manager", "quantity surveyor"],
+      "max_days_old": 2,
+      "results_per_page": 50,
+      "max_requests_per_run": 60,
+      "delay_seconds": 2.5
+    },
+    "jsearch": {
+      "enabled": true,
+      "_note": "JSearch (RapidAPI) free plan is small (about 200 requests/month when this was written - verify). Locations in always_locations run every day; the rest rotate so the monthly quota is not exceeded.",
+      "requests_per_run": 5,
+      "always_locations": ["Kolkata"],
+      "role_queries": ["planning engineer construction", "billing quantity surveyor construction"],
+      "remote_queries": ["construction planning engineer remote", "quantity surveyor remote"],
+      "date_posted": "week"
+    }
+  },
+
+  "filters": {
+    "min_score": 45,
+    "max_age_days": 8,
+    "retain_days": 10,
+    "drop_below_salary_floor": true,
+    "salary_tolerance": 0.10,
+
+    "include_title_patterns": [
+      "\\bplanning\\b", "\\bplanner\\b", "\\bscheduler\\b", "\\bbilling\\b",
+      "\\bquantity\\s+survey", "\\bq\\.?s\\.?\\b", "\\bestimat(?:ion|or|ing)\\b",
+      "\\bcost\\s+(?:control|engineer|manager|planning)", "\\bproject\\s+controls?\\b",
+      "\\bcontracts?\\s+(?:engineer|manager|administrator)", "\\bcommercial\\s+(?:manager|engineer)"
+    ],
+    "strict_title_patterns": [
+      "\\bquantity\\s+survey", "\\bbilling\\s+engineer", "\\bq\\.?s\\.?\\b", "\\bproject\\s+controls?\\b",
+      "\\bcontracts?\\s+engineer", "\\bcost\\s+engineer"
+    ],
+    "construction_context_patterns": [
+      "construction", "civil", "building", "infrastructure", "real estate", "real-estate", "\\bepc\\b",
+      "contractor", "high[- ]rise", "residential", "township", "structural", "\\bmep\\b", "fit[- ]?out",
+      "turnkey", "highway", "metro", "railway", "bridge", "tunnel", "\\bpmc\\b", "bill of quantit",
+      "\\bboq\\b", "\\bbbs\\b", "developer", "\\bsite\\b", "oil\\s*&\\s*gas", "refinery"
+    ],
+    "exclude_title_patterns": [
+      "production\\s+planning", "supply\\s+chain", "demand\\s+planning", "financial\\s+planning",
+      "workforce\\s+planning", "capacity\\s+planning", "town\\s+planner", "urban\\s+planner",
+      "city\\s+planner", "transport\\s+planner", "network\\s+planning", "rf\\s+planning",
+      "medical\\s+billing", "hospital\\s+billing", "revenue", "payroll", "accountant", "accounts",
+      "telecom", "software", "\\bdata\\b", "media", "marketing", "merchandis", "wealth",
+      "insurance", "travel", "banking", "loan", "\\bsales\\b", "pharma", "clinical",
+      "billing\\s+(?:executive|specialist|associate|analyst|clerk|coordinator|operator|officer)"
+    ],
+    "block_title_patterns": [
+      "\\b(?:intern|internship|trainee|fresher|freshers|apprentice|graduate\\s+engineer|get|junior|jr\\.?)\\b",
+      "\\b(?:director|vice\\s+president|vp|avp|president|chief|general\\s+manager|agm|dgm|head\\s+of)\\b",
+      "contract\\s+basis|on\\s+contract|fixed[- ]term|freelance|part[- ]time|temporary"
+    ],
+    "consultancy_company_patterns": [
+      "consult", "associates", "advisory", "\\bpmc\\b", "project\\s+management", "quantity\\s+survey"
+    ]
+  },
+
+  "scoring": {
+    "title_points": [
+      {"points": 40, "pattern": "\\b(?:senior|sr\\.?)\\s+(?:planning|billing)\\s+engineer|\\bplanning\\s+(?:manager|lead)|\\bbilling\\s+manager|\\b(?:senior|sr\\.?)\\s+(?:quantity\\s+surveyor|qs)\\b|\\bproject\\s+controls?\\s+(?:manager|engineer)|\\bcontracts?\\s+manager"},
+      {"points": 36, "pattern": "\\b(?:planning|billing)\\s+engineer|\\bquantity\\s+surveyor|\\bqs\\b|\\bcost\\s+(?:control|engineer)|\\bcontracts?\\s+engineer|\\bproject\\s+planning|\\bproject\\s+controls?"},
+      {"points": 28, "pattern": "\\bestimat|\\bplanner|\\bscheduler|\\bplanning|\\bbilling|\\bcommercial"}
+    ],
+    "title_default_points": 20,
+    "skills_cap": 35,
+    "reputed_bonus": 6
+  },
+
+  "skills": [
+    {"name": "MS Project", "weight": 5, "aliases": ["ms project", "msp", "microsoft project", "ms-project"]},
+    {"name": "SAP", "weight": 4, "aliases": ["SAP"], "case_sensitive": true},
+    {"name": "Scheduling / Baseline", "weight": 5, "aliases": ["scheduling", "baseline schedule", "critical path", "look-ahead", "lookahead", "programme", "project schedule", "construction schedule"]},
+    {"name": "Delay Analysis / EOT", "weight": 5, "aliases": ["delay analysis", "extension of time", "eot", "claims"]},
+    {"name": "Cost Control / Budget vs Actual", "weight": 5, "aliases": ["cost control", "budget vs actual", "cost analysis", "budgeting", "cost monitoring", "cost tracking"]},
+    {"name": "Billing (Client / Vendor)", "weight": 5, "aliases": ["billing", "ra bill", "running account bill", "client bill", "subcontractor bill", "vendor bill", "bill certification", "certification of bills"]},
+    {"name": "Bill Checking / Reconciliation", "weight": 4, "aliases": ["bill checking", "reconciliation", "material reconciliation"]},
+    {"name": "BBS", "weight": 3, "aliases": ["bbs", "bar bending schedule"]},
+    {"name": "BoQ / Work Orders", "weight": 4, "aliases": ["boq", "bill of quantities", "bill of quantity", "work order", "work orders"]},
+    {"name": "Quantity Surveying", "weight": 5, "aliases": ["quantity surveying", "quantity surveyor", "qs", "quantity take-off", "quantity takeoff", "take-off", "measurement"]},
+    {"name": "Estimation", "weight": 3, "aliases": ["estimation", "estimating", "cost estimate", "rate analysis"]},
+    {"name": "MIS / DPR Reporting", "weight": 3, "aliases": ["MIS", "DPR", "progress report", "mis report"], "case_sensitive": true},
+    {"name": "Change / Decision Mgmt", "weight": 3, "aliases": ["change management", "variation order", "variation", "change order", "decision management"]},
+    {"name": "Procurement / Material Tracking", "weight": 2, "aliases": ["procurement", "material tracking", "material planning"]},
+    {"name": "Vendor / Subcontractor Mgmt", "weight": 2, "aliases": ["vendor management", "subcontractor", "contractor management"]},
+    {"name": "Advanced Excel", "weight": 3, "aliases": ["excel", "advanced excel", "vba"]},
+    {"name": "AutoCAD", "weight": 2, "aliases": ["autocad"]},
+    {"name": "Statutory Compliance", "weight": 2, "aliases": ["ec compliance", "environmental clearance", "seiaa", "igbc", "fire noc", "statutory"]}
+  ],
+
+  "gap_keywords": [
+    {"label": "Primavera P6", "aliases": ["primavera", "p6"]}
+  ],
+
+  "reputed_companies": [
+    "larsen", "l&t", "shapoorji", "tata projects", "tata realty", "tata housing", "godrej", "prestige", "brigade",
+    "sobha", "dlf", "lodha", "macrotech", "mahindra", "oberoi", "embassy", "rmz", "puravankara", "phoenix",
+    "kolte patil", "kalpataru", "hiranandani", "raheja", "ahluwalia", "ncc", "kec international", "afcons",
+    "gammon", "simplex", "jmc projects", "b l kashyap", "sterling and wilson", "ps group", "ambuja neotia",
+    "siddha", "srijan", "merlin", "bengal peerless", "adani", "jsw", "hindustan construction", "hcc",
+    "gr infra", "dilip buildcon", "ircon", "rites", "nbcc", "engineers india", "megha engineering",
+    "cushman", "jll", "jones lang", "cbre", "colliers", "knight frank", "turner & townsend", "arcadis",
+    "aecom", "jacobs", "mace", "currie & brown", "rider levett", "rlb", "gleeds", "faithful+gould", "atkins",
+    "wsp", "parsons", "bechtel", "fluor", "hill international", "dar al handasah", "dar group", "samsung c&t",
+    "hyundai engineering", "emaar", "aldar", "nakheel", "damac", "meraas", "arabtec", "al naboodah",
+    "khansaheb", "alec", "drake & scull", "galfar", "consolidated contractors", "saudi binladin", "nesma",
+    "red sea global", "neom", "roshn", "diriyah", "qatari diar", "ashghal", "besix", "vinci", "bouygues",
+    "skanska", "balfour beatty", "laing o'rourke", "multiplex", "lendlease", "cpb contractors", "keppel",
+    "surbana", "sembcorp"
+  ],
+
+  "email": {
+    "send_when_empty": true,
+    "max_jobs": 0,
+    "_max_jobs_note": "0 = no limit. All new jobs for your enabled locations are included.",
+    "fallback_top_matches": 5
+  }
+}
